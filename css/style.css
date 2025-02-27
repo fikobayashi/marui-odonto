@@ -34,21 +34,24 @@ a {
 
 
 .header-bg {
-  background-color: #FAFCFD;
-  /* background-color: aquamarine; */
+  /* background-color: #E5FEFE; */
+  /* background-color: #FAFCFD; */
+  background-color: #00B1AE;
 }
 
 .especialista-bg {
-  background-color: #fef4e6;
-  /* background-color: lightgoldenrodyellow; */
+  /* background-color: #fee5e5; */
+  /* background-color: #fef4e6; */
+  background-color: #FED69C;
 }
 
 .nosso-espaco-bg {
-  background-color: #FAFCFD;
+  background-color: #fef4e6;
+  /* background-color: #FAFCFD; */
 }
 
 .contato-bg {
-  background-color: #fef4e6;
+  background-color: #FED69C;
 }
 
 .titulo {
@@ -62,6 +65,10 @@ a {
   align-items: center;
   justify-content: space-between;
   /* gap: 30px; */
+}
+
+.header img {
+  padding-top: 3px;
 }
 
 .header-menu {
