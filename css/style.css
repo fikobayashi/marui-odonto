@@ -4,9 +4,12 @@ html {
 }
 
 body {
+  position: relative;
   margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: Arial, Helvetica, sans-serif;
-  color: #313131;
+  /* color: #313131; */
+  color: #292929;
 }
 
 p, h1,h2,h3 {
@@ -34,24 +37,29 @@ a {
 
 
 .header-bg {
+  /* position: fixed; */
   /* background-color: #E5FEFE; */
   /* background-color: #FAFCFD; */
-  background-color: #00B1AE;
+  /* background-color: #00B1AE; */
+  background-color: #d3e4f4;
+  width: 100%;
 }
 
 .especialista-bg {
   /* background-color: #fee5e5; */
-  /* background-color: #fef4e6; */
-  background-color: #FED69C;
+  background-color: #fef4e6;
+  /* background-color: #FDC26A; */
 }
 
 .nosso-espaco-bg {
-  background-color: #fef4e6;
+  background-color: #FDC26A;
+  /* background-color: #fef4e6; */
   /* background-color: #FAFCFD; */
 }
 
 .contato-bg {
-  background-color: #FED69C;
+  background-color: #fef4e6;
+  /* background-color: #FED69C; */
 }
 
 .titulo {
@@ -79,9 +87,15 @@ a {
 
 .header-menu a {
   padding: 8px;
-  background-color: #d3e4f4;
+  /* background-color: #d3e4f4; */
+  background-color: #bacbda;
+  /* color: #F5F9FC; */
   border-radius: 4px;
 }
+
+/* #especialista .titulo {
+  padding-top: 141px;
+} */
 
 .especialista {
   display: grid;
