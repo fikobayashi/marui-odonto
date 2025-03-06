@@ -17,7 +17,8 @@ p, h1,h2,h3 {
 }
 
 ul {
-  padding: 0px;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -82,6 +83,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  padding: 16px 0 16px 0;
 }
 
 .header-menu a {
