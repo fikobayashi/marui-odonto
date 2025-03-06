@@ -37,7 +37,6 @@ a {
 
 
 .header-bg {
-  /* position: fixed; */
   /* background-color: #E5FEFE; */
   /* background-color: #FAFCFD; */
   /* background-color: #00B1AE; */
@@ -129,6 +128,16 @@ a {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding-bottom: 80px;
+}
+
+.borda {
+  border-left: 2px  #FDC26A solid;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.contato ul>li {
+  padding: 5px 5px 5px 0;
 }
 
 
