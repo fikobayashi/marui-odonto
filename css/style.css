@@ -180,6 +180,9 @@ a {
   .header {
     gap: 3px;
   }
+  .header-menu {
+    gap: 15px;
+  }
 }
 
 
