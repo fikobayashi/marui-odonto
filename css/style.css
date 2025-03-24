@@ -1,10 +1,11 @@
-html {
-  scroll-behavior: smooth;
-
+* {
+  box-sizing: border-box;
+  
 }
 
+html {scroll-behavior: smooth;}
+
 body {
-  position: relative;
   margin: 0;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -30,12 +31,9 @@ a {
 .container {
   box-sizing: border-box;
   max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-inline: 20px;
+  margin: 0 auto;
 }
-
 
 .header-bg {
   /* background-color: #E5FEFE; */
@@ -151,19 +149,21 @@ a {
 
 @media (max-width: 600px) {
   .titulo {
-    padding-top: 60px;
+    padding-top: 40px;
+    font-size: .9rem;
   }
   /* .header-menu {
     gap: 18px;
   } */
   .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
+    padding: 4px 8px;
+    font-size: 10px;
   }
   .especialista {
     grid-template-columns: 1fr;
     gap: 40px;
     padding-bottom: 60px;
+    font-size: .8rem;
   }
   .espaco-fotos {
     grid-template-columns: 1fr;
@@ -171,6 +171,9 @@ a {
   }
   .contato {
     grid-template-columns: 1fr;
+  }
+  .contato ul>li {
+    font-size: .85rem;
   }
 }
 
