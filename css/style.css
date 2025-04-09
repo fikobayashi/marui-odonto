@@ -1,11 +1,11 @@
 * {
   box-sizing: border-box;
-  
 }
 
-html {scroll-behavior: smooth;}
+/* html {scroll-behavior: smooth;} */
 
 body {
+  position: relative;
   margin: 0;
   /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Inter", Arial, Helvetica, sans-serif;
@@ -36,6 +36,10 @@ a {
 }
 
 .header-bg {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
   /* background-color: #E5FEFE; */
   /* background-color: #FAFCFD; */
   /* background-color: #00B1AE; */
@@ -62,17 +66,20 @@ a {
 
 .titulo {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  padding-top: 80px;
+  font-weight: 700;
+  padding-top: 58px;
   padding-bottom: 20px;
 }
 
+h1.titulo {
+  font-size: 2rem;
+  font-weight: 800;
+}
 .header{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  /* gap: 30px; */
 }
 
 .header img {
@@ -129,7 +136,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 180px;
 }
 
 .borda {
@@ -146,15 +153,52 @@ a {
   padding-bottom: 0;
 }
 
+.menu-mobile {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  display: none;
+  background: #bacbda;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.menu-mobile li {
+  font-size: .9rem;
+  text-align: end;
+}
+
+.menu-mobile li>a {
+  display: block;
+  padding: 10px 14px;
+}
+
+.menu-mobile li>a:hover {
+  display: block;
+  background-color: #d3e4f4;
+}
+
+.btn-menu {
+  display: none;
+  cursor: pointer;
+}
+/* position fixed faz com que menu mobile não ocupe espaço */
+.menu-drop {
+  position: fixed;
+  right: 0;
+}
+
+.menu-drop:hover .menu-mobile {display: block;}
 
 @media (max-width: 600px) {
   .titulo {
     padding-top: 40px;
     font-size: .9rem;
   }
-  /* .header-menu {
-    gap: 18px;
-  } */
+  h1.titulo {
+    font-size: 1.2rem;
+  }
   .header-menu a {
     padding: 4px 8px;
     font-size: 10px;
@@ -182,8 +226,12 @@ a {
     gap: 3px;
   }
   .header-menu {
+    display: none;
     padding-top: 5px;
     gap: 15px;
+  }
+  .btn-menu {
+    display: block;
   }
   .contato ul {
     margin-bottom: 20px;
