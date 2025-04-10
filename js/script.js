@@ -42,7 +42,8 @@ toggleButton.addEventListener('click', () => {
 
 // Esconde o menu ao clicar em um item
 items.forEach(item => {
-  item.addEventListener('click', () => {
+  item.addEventListener('click', (e) => {
+		e.preventDefault();
     menu.classList.remove('mostrar');
   });
 });
