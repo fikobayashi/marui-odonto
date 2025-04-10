@@ -2,8 +2,6 @@
   box-sizing: border-box;
 }
 
-/* html {scroll-behavior: smooth;} */
-
 body {
   position: relative;
   margin: 0;
@@ -155,7 +153,7 @@ h1.titulo {
 
 .menu-mobile {
   position: absolute;
-  top: 38px;
+  top: 40px;
   right: 0;
   display: none;
   background: #bacbda;
@@ -180,18 +178,17 @@ h1.titulo {
 }
 
 .btn-menu {
-  display: none;
+  display: block;
   cursor: pointer;
 }
-/* position fixed faz com que menu mobile não ocupe espaço */
+
 .menu-drop {
-  position: fixed;
-  right: 0;
+  display: none;
 }
 
 .menu-drop:hover .menu-mobile {display: block;}
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .titulo {
     padding-top: 40px;
     font-size: .9rem;
@@ -221,7 +218,7 @@ h1.titulo {
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   .header {
     gap: 3px;
   }
@@ -230,7 +227,7 @@ h1.titulo {
     padding-top: 5px;
     gap: 15px;
   }
-  .btn-menu {
+  .menu-drop {
     display: block;
   }
   .contato ul {
