@@ -176,10 +176,6 @@ h1.titulo {
 
 .menu-drop:hover .menu-mobile {display: block;}
 
-.menu-mobile.mostrar {
-  display: block;
-}
-
 @media screen and (max-width: 600px) {
   .titulo {
     padding-top: 40px;
