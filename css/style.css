@@ -5,9 +5,7 @@
 body {
   position: relative;
   margin: 0;
-  /* font-family: Arial, Helvetica, sans-serif; */
   font-family: "Inter", Arial, Helvetica, sans-serif;
-  /* color: #313131; */
   color: #292929;
 }
 
@@ -38,28 +36,21 @@ a {
   position: sticky;
   top: 0;
   left: 0;
-  /* background-color: #E5FEFE; */
-  /* background-color: #FAFCFD; */
-  /* background-color: #00B1AE; */
   background-color: #d3e4f4;
   width: 100%;
 }
 
 .especialista-bg {
-  /* background-color: #fee5e5; */
   background-color: #fef4e6;
-  /* background-color: #FDC26A; */
 }
 
 .nosso-espaco-bg {
   background-color: #FDC26A;
-  /* background-color: #fef4e6; */
-  /* background-color: #FAFCFD; */
+
 }
 
 .contato-bg {
   background-color: #fef4e6;
-  /* background-color: #FED69C; */
 }
 
 .titulo {
@@ -93,9 +84,7 @@ h1.titulo {
 
 .header-menu a {
   padding: 8px;
-  /* background-color: #d3e4f4; */
   background-color: #bacbda;
-  /* color: #F5F9FC; */
   border-radius: 4px;
 }
 
@@ -140,7 +129,6 @@ h1.titulo {
 .borda {
   border-left: 4px  #FDC26A solid;
   border-radius: 3px;
-  /* padding: 10px; */
 }
 
 .contato ul>li {
@@ -187,6 +175,9 @@ h1.titulo {
 }
 
 .menu-drop:hover .menu-mobile {display: block;}
+.menu-mobile.mostrar {
+  display: block;
+}
 
 @media screen and (max-width: 600px) {
   .titulo {
