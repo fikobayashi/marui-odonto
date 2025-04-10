@@ -36,13 +36,13 @@ const toggleButton = document.querySelector('.btn-menu');
 const menu = document.querySelector('.menu-mobile');
 const items = document.querySelectorAll('.item-menu');
 
-toggleButton.addEventListener('click', () => {
+toggleButton.addEventListener('touchstart', () => {
   menu.classList.toggle('mostrar');
 });
 
 // Esconde o menu ao clicar em um item
 items.forEach(item => {
-  item.addEventListener('touchstart', (e) => {
+  item.addEventListener('touchstart', () => {
     menu.classList.remove('mostrar');
   });
 });
