@@ -42,7 +42,7 @@ toggleButton.addEventListener('click', () => {
 
 // Esconde o menu ao clicar em um item
 items.forEach(item => {
-  item.addEventListener('click', (e) => {
+  item.addEventListener('touchstart', (e) => {
 		e.preventDefault();
     menu.classList.remove('mostrar');
   });
