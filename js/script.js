@@ -34,7 +34,7 @@ const toggleButton = document.querySelector('.btn-menu');
 const menu = document.querySelector('.menu-mobile');
 const items = document.querySelectorAll('.item-menu a');
 
-// Alterna o estado do menu ao clicar no botão
+// mostra menu mobile ao clicar no botão
 toggleButton.addEventListener('click', () => {
 	items.forEach((e) => e.classList.remove("ativo"));
 	menu.style.display = 'block';
