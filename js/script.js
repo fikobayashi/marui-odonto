@@ -36,6 +36,9 @@ const items = document.querySelectorAll('.item-menu a');
 
 // mostra menu mobile ao clicar no botão
 toggleButton.addEventListener('click', () => {
+	setTimeout(() => {
+		toggleButton.classList.add("down");
+	}, 50);
 	items.forEach((e) => e.classList.remove("ativo"));
 	menu.style.display = 'block';
 });
@@ -45,6 +48,7 @@ items.forEach(item => {
   item.addEventListener('click', (e) => {
 		e.target.classList.add("ativo");
 		setTimeout(() => {
+			toggleButton.classList.remove("down");
 			menu.style.display = "none"; // Oculta o menu
 		}, 200); // Tempo em milissegundos para visualizar o estilo
   });

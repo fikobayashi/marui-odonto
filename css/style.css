@@ -170,6 +170,15 @@ h1.titulo {
   cursor: pointer;
 }
 
+.down {
+  transition: .3s;
+  transform: rotate(180deg);
+}
+
+.up {
+  transition: .3s;;
+}
+
 .menu-drop {
   display: none;
 }
@@ -179,7 +188,7 @@ h1.titulo {
   background-color: #d3e4f4;
 }
 
-.menu-drop:hover .menu-mobile {display: block;}
+/* .menu-drop:hover .menu-mobile {display: block;} */
 
 @media screen and (max-width: 600px) {
   .titulo {
