@@ -36,11 +36,11 @@ const items = document.querySelectorAll('.item-menu a');
 
 // mostra menu mobile ao clicar no botão
 toggleButton.addEventListener('click', () => {
-	setTimeout(() => {
-		toggleButton.classList.add("down");
-	}, 50);
 	items.forEach((e) => e.classList.remove("ativo"));
-	menu.style.display = 'block';
+	setTimeout(() => {
+    toggleButton.classList.toggle("down");
+    menu.style.display = "block";
+  }, 200);
 });
 
 // Esconde o menu ao clicar em um item do menu mobile
@@ -53,3 +53,11 @@ items.forEach(item => {
 		}, 200); // Tempo em milissegundos para visualizar o estilo
   });
 });
+
+// Fecha o menu quando usuário clicar fora dele
+window.onclick = function(e) {
+	if(!e.target.matches('.btn-menu')) {
+		toggleButton.classList.remove("down");
+			menu.style.display = "none";
+	}
+}
