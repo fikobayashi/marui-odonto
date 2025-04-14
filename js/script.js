@@ -38,9 +38,9 @@ const items = document.querySelectorAll('.item-menu a');
 toggleButton.addEventListener('click', () => {
 	items.forEach((e) => e.classList.remove("ativo"));
 	setTimeout(() => {
-    toggleButton.classList.toggle("down");
-    menu.style.display = "block";
-  }, 200);
+		toggleButton.classList.add("down");		
+		menu.style.display = "block";
+	}, 100);
 });
 
 // Esconde o menu ao clicar em um item do menu mobile
@@ -57,7 +57,9 @@ items.forEach(item => {
 // Fecha o menu quando usuário clicar fora dele
 window.onclick = function(e) {
 	if(!e.target.matches('.btn-menu')) {
-		toggleButton.classList.remove("down");
+		setTimeout(() => {
+			toggleButton.classList.remove("down");
 			menu.style.display = "none";
+		}, 80)
 	}
 }
