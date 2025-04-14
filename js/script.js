@@ -61,5 +61,5 @@ window.onclick = function(e) {
 			toggleButton.classList.remove("down");
 			menu.style.display = "none";
 		}, 80)
-	}
+	} 	
 }
